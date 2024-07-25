@@ -5,15 +5,15 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
-public class SnapshotOrderbook {
+public class Snapshot {
     private String channel;
     private String type;
     private List<Data> data;
 
     @JsonCreator
-    public SnapshotOrderbook(@JsonProperty("channel") String channel,
-                             @JsonProperty("type") String type,
-                             @JsonProperty("data") List<Data> data)
+    public Snapshot(@JsonProperty("channel") String channel,
+                    @JsonProperty("type") String type,
+                    @JsonProperty("data") List<Data> data)
     {
         this.channel = channel;
         this.type = type;
@@ -34,7 +34,7 @@ public class SnapshotOrderbook {
 
     @Override
     public String toString() {
-        return "SnapshotOrderbook{" +
+        return "Snapshot{" +
                 "channel='" + channel + '\'' +
                 ", type='" + type + '\'' +
                 ", data=" + data +

@@ -1,4 +1,4 @@
-package org.dgf.core;
+package org.dgf.util;
 
 
 import java.time.LocalDateTime;

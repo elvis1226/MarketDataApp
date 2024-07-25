@@ -237,3 +237,318 @@
 2024-07-25 11:16:05,807 INFO o.d.c.DataProcessor [Thread-9] 97ab457a-c488-4cff-bf8a-b2e4cd33cbbd - 1M CandleStick{symbol=ETH/USD, open=3167.885, high=3170.94, low=3167.3, close=3170.4849999999997, start=2024-07-25T03:15:04.121511, tickCount=7129}
 2024-07-25 11:16:05,818 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 69, key = 1b3e04d1-7d92-4740-8100-a4ee6a557219, value = 1M CandleStick{symbol=BTC/USD, open=64065.65, high=64092.1, low=64054.2, close=64081.2, start=2024-07-25T03:15:04.141320, tickCount=7129}
 2024-07-25 11:16:05,819 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 70, key = 97ab457a-c488-4cff-bf8a-b2e4cd33cbbd, value = 1M CandleStick{symbol=ETH/USD, open=3167.885, high=3170.94, low=3167.3, close=3170.4849999999997, start=2024-07-25T03:15:04.121511, tickCount=7129}
+2024-07-25 11:17:40,628 INFO o.d.c.DataProcessor [Thread-9] 7cc6060c-3e78-4c02-9e70-ea77af031d8f - 1M CandleStick{symbol=BTC/USD, open=64081.2, high=64082.3, low=64016.95, close=64051.1, start=2024-07-25T03:16:04.110131, tickCount=9270}
+2024-07-25 11:17:40,629 INFO o.d.c.DataProcessor [Thread-9] 78e2bd0c-304b-478b-9dfa-79ffc492bf47 - 1M CandleStick{symbol=ETH/USD, open=3170.33, high=3170.885, low=3167.69, close=3169.7799999999997, start=2024-07-25T03:16:04.146894, tickCount=9270}
+2024-07-25 11:17:40,642 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 71, key = 7cc6060c-3e78-4c02-9e70-ea77af031d8f, value = 1M CandleStick{symbol=BTC/USD, open=64081.2, high=64082.3, low=64016.95, close=64051.1, start=2024-07-25T03:16:04.110131, tickCount=9270}
+2024-07-25 11:17:40,642 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 72, key = 78e2bd0c-304b-478b-9dfa-79ffc492bf47, value = 1M CandleStick{symbol=ETH/USD, open=3170.33, high=3170.885, low=3167.69, close=3169.7799999999997, start=2024-07-25T03:16:04.146894, tickCount=9270}
+2024-07-25 11:18:18,354 INFO o.d.c.DataProcessor [Thread-9] 1eecc4bb-126a-44b9-927f-5013cc5bb626 - 1M CandleStick{symbol=BTC/USD, open=64051.1, high=64054.0, low=63992.05, close=64047.05, start=2024-07-25T03:17:04.140724, tickCount=9687}
+2024-07-25 11:18:18,355 INFO o.d.c.DataProcessor [Thread-9] 230a2034-d0c3-41f7-b8d8-d21596b99b62 - 1M CandleStick{symbol=ETH/USD, open=3169.0950000000003, high=3169.95, low=3164.2200000000003, close=3168.715, start=2024-07-25T03:17:04.152069, tickCount=9687}
+2024-07-25 11:18:18,369 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 73, key = 1eecc4bb-126a-44b9-927f-5013cc5bb626, value = 1M CandleStick{symbol=BTC/USD, open=64051.1, high=64054.0, low=63992.05, close=64047.05, start=2024-07-25T03:17:04.140724, tickCount=9687}
+2024-07-25 11:18:18,369 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 74, key = 230a2034-d0c3-41f7-b8d8-d21596b99b62, value = 1M CandleStick{symbol=ETH/USD, open=3169.0950000000003, high=3169.95, low=3164.2200000000003, close=3168.715, start=2024-07-25T03:17:04.152069, tickCount=9687}
+2024-07-25 11:20:04,443 INFO o.a.k.c.NetworkClient [kafka-coordinator-heartbeat-thread | test] [Consumer clientId=consumer-test-1, groupId=test] Node -1 disconnected.
+2024-07-25 11:20:18,408 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Node -1 disconnected.
+2024-07-25 11:20:25,422 INFO o.d.c.DataProcessor [Thread-9] c982fd60-6768-4c4e-9736-c532ee722a29 - 1M CandleStick{symbol=BTC/USD, open=64047.05, high=64056.7, low=64029.9, close=64042.25, start=2024-07-25T03:18:04.135209, tickCount=8194}
+2024-07-25 11:20:25,424 INFO o.d.c.DataProcessor [Thread-9] 017a4443-a6a8-4a8b-aa0b-c6a6ff2f3528 - 1M CandleStick{symbol=ETH/USD, open=3169.0, high=3169.545, low=3166.005, close=3166.715, start=2024-07-25T03:18:04.165482, tickCount=8194}
+2024-07-25 11:20:25,489 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 75, key = c982fd60-6768-4c4e-9736-c532ee722a29, value = 1M CandleStick{symbol=BTC/USD, open=64047.05, high=64056.7, low=64029.9, close=64042.25, start=2024-07-25T03:18:04.135209, tickCount=8194}
+2024-07-25 11:20:25,490 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 76, key = 017a4443-a6a8-4a8b-aa0b-c6a6ff2f3528, value = 1M CandleStick{symbol=ETH/USD, open=3169.0, high=3169.545, low=3166.005, close=3166.715, start=2024-07-25T03:18:04.165482, tickCount=8194}
+2024-07-25 11:22:25,306 INFO o.d.c.DataProcessor [Thread-9] e80e0805-6fdd-4656-982e-87d2a6b93488 - 1M CandleStick{symbol=BTC/USD, open=64042.25, high=64050.75, low=64003.3, close=64008.45, start=2024-07-25T03:19:04.099916, tickCount=7701}
+2024-07-25 11:22:25,306 INFO o.d.c.DataProcessor [Thread-9] 9b8df98c-0fc4-4e4a-92ed-15b268b73ca7 - 1M CandleStick{symbol=ETH/USD, open=3166.62, high=3167.98, low=3166.425, close=3166.615, start=2024-07-25T03:19:04.167843, tickCount=7701}
+2024-07-25 11:22:25,321 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 77, key = e80e0805-6fdd-4656-982e-87d2a6b93488, value = 1M CandleStick{symbol=BTC/USD, open=64042.25, high=64050.75, low=64003.3, close=64008.45, start=2024-07-25T03:19:04.099916, tickCount=7701}
+2024-07-25 11:22:25,322 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 78, key = 9b8df98c-0fc4-4e4a-92ed-15b268b73ca7, value = 1M CandleStick{symbol=ETH/USD, open=3166.62, high=3167.98, low=3166.425, close=3166.615, start=2024-07-25T03:19:04.167843, tickCount=7701}
+2024-07-25 11:24:36,071 INFO o.d.c.DataProcessor [Thread-9] 612d0c7e-a6a7-42dd-a825-eb7895872f20 - 1M CandleStick{symbol=BTC/USD, open=64022.5, high=64042.850000000006, low=64005.65, close=64025.35, start=2024-07-25T03:20:04.173685, tickCount=8399}
+2024-07-25 11:24:36,072 INFO o.d.c.DataProcessor [Thread-9] 4fe95ea1-d7b6-4e1e-848b-198059d31772 - 1M CandleStick{symbol=ETH/USD, open=3166.615, high=3167.975, low=3166.585, close=3167.365, start=2024-07-25T03:20:04.156197, tickCount=8399}
+2024-07-25 11:24:36,085 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 79, key = 612d0c7e-a6a7-42dd-a825-eb7895872f20, value = 1M CandleStick{symbol=BTC/USD, open=64022.5, high=64042.850000000006, low=64005.65, close=64025.35, start=2024-07-25T03:20:04.173685, tickCount=8399}
+2024-07-25 11:24:36,086 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 80, key = 4fe95ea1-d7b6-4e1e-848b-198059d31772, value = 1M CandleStick{symbol=ETH/USD, open=3166.615, high=3167.975, low=3166.585, close=3167.365, start=2024-07-25T03:20:04.156197, tickCount=8399}
+2024-07-25 11:26:43,712 INFO o.d.c.DataProcessor [Thread-9] 0766f8fe-b1de-4945-9e83-dbd7e35bc620 - 1M CandleStick{symbol=BTC/USD, open=64025.4, high=64026.7, low=63979.9, close=63997.350000000006, start=2024-07-25T03:21:04.196170, tickCount=8202}
+2024-07-25 11:26:43,713 INFO o.d.c.DataProcessor [Thread-9] 9831fd95-8ae3-4379-96a8-893fa8f9207d - 1M CandleStick{symbol=ETH/USD, open=3167.365, high=3167.4449999999997, low=3162.6, close=3165.02, start=2024-07-25T03:21:04.149938, tickCount=8202}
+2024-07-25 11:26:43,720 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 81, key = 0766f8fe-b1de-4945-9e83-dbd7e35bc620, value = 1M CandleStick{symbol=BTC/USD, open=64025.4, high=64026.7, low=63979.9, close=63997.350000000006, start=2024-07-25T03:21:04.196170, tickCount=8202}
+2024-07-25 11:26:43,721 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 82, key = 9831fd95-8ae3-4379-96a8-893fa8f9207d, value = 1M CandleStick{symbol=ETH/USD, open=3167.365, high=3167.4449999999997, low=3162.6, close=3165.02, start=2024-07-25T03:21:04.149938, tickCount=8202}
+2024-07-25 11:28:51,986 INFO o.d.c.DataProcessor [Thread-9] 8dff658a-9e84-4188-8ec4-5f8a6e170c00 - 1M CandleStick{symbol=BTC/USD, open=63996.350000000006, high=64080.7, low=63992.25, close=64075.15, start=2024-07-25T03:22:04.234712, tickCount=8230}
+2024-07-25 11:28:51,986 INFO o.d.c.DataProcessor [Thread-9] e20ce22a-edfc-4c0d-85b0-fc1db063a59b - 1M CandleStick{symbol=ETH/USD, open=3165.02, high=3168.77, low=3164.655, close=3168.77, start=2024-07-25T03:22:04.115348, tickCount=8230}
+2024-07-25 11:28:52,106 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 83, key = 8dff658a-9e84-4188-8ec4-5f8a6e170c00, value = 1M CandleStick{symbol=BTC/USD, open=63996.350000000006, high=64080.7, low=63992.25, close=64075.15, start=2024-07-25T03:22:04.234712, tickCount=8230}
+2024-07-25 11:28:52,107 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 84, key = e20ce22a-edfc-4c0d-85b0-fc1db063a59b, value = 1M CandleStick{symbol=ETH/USD, open=3165.02, high=3168.77, low=3164.655, close=3168.77, start=2024-07-25T03:22:04.115348, tickCount=8230}
+2024-07-25 11:30:04,580 INFO o.a.k.c.NetworkClient [kafka-coordinator-heartbeat-thread | test] [Consumer clientId=consumer-test-1, groupId=test] Node -1 disconnected.
+2024-07-25 11:30:05,387 INFO o.d.c.DataProcessor [Thread-9] 243fd59a-cff3-4e6e-b60d-01d63c666fd2 - 1M CandleStick{symbol=BTC/USD, open=64075.15, high=64086.4, low=64024.899999999994, close=64032.2, start=2024-07-25T03:23:04.205609, tickCount=8142}
+2024-07-25 11:30:05,387 INFO o.d.c.DataProcessor [Thread-9] 265b42f3-dbef-4d72-b2a6-877bfef86237 - 1M CandleStick{symbol=ETH/USD, open=3168.35, high=3169.18, low=3165.37, close=3166.515, start=2024-07-25T03:23:04.243724, tickCount=8142}
+2024-07-25 11:30:05,387 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Node -1 disconnected.
+2024-07-25 11:30:05,389 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 85, key = 243fd59a-cff3-4e6e-b60d-01d63c666fd2, value = 1M CandleStick{symbol=BTC/USD, open=64075.15, high=64086.4, low=64024.899999999994, close=64032.2, start=2024-07-25T03:23:04.205609, tickCount=8142}
+2024-07-25 11:30:05,389 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 86, key = 265b42f3-dbef-4d72-b2a6-877bfef86237, value = 1M CandleStick{symbol=ETH/USD, open=3168.35, high=3169.18, low=3165.37, close=3166.515, start=2024-07-25T03:23:04.243724, tickCount=8142}
+2024-07-25 11:30:23,307 INFO o.d.c.DataProcessor [Thread-9] 628717d6-1d01-4821-8117-cc755f0655c9 - 1M CandleStick{symbol=BTC/USD, open=64032.2, high=64094.5, low=64022.6, close=64088.1, start=2024-07-25T03:24:04.241316, tickCount=6343}
+2024-07-25 11:30:23,307 INFO o.d.c.DataProcessor [Thread-9] b3393501-3d84-4782-96b0-9f17b5d0b3f1 - 1M CandleStick{symbol=ETH/USD, open=3166.34, high=3167.415, low=3165.52, close=3167.0950000000003, start=2024-07-25T03:24:04.246420, tickCount=6343}
+2024-07-25 11:30:23,320 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 87, key = 628717d6-1d01-4821-8117-cc755f0655c9, value = 1M CandleStick{symbol=BTC/USD, open=64032.2, high=64094.5, low=64022.6, close=64088.1, start=2024-07-25T03:24:04.241316, tickCount=6343}
+2024-07-25 11:30:23,320 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 88, key = b3393501-3d84-4782-96b0-9f17b5d0b3f1, value = 1M CandleStick{symbol=ETH/USD, open=3166.34, high=3167.415, low=3165.52, close=3167.0950000000003, start=2024-07-25T03:24:04.246420, tickCount=6343}
+2024-07-25 11:30:32,646 INFO o.d.c.DataProcessor [Thread-9] b9acdfc3-7f23-4189-9aeb-4ba28d7946d7 - 1M CandleStick{symbol=BTC/USD, open=64088.1, high=64159.25, low=64082.3, close=64154.6, start=2024-07-25T03:25:04.244795, tickCount=4592}
+2024-07-25 11:30:32,646 INFO o.d.c.DataProcessor [Thread-9] 80f0c548-dd27-4bbe-b078-a76ad8074a2a - 1M CandleStick{symbol=ETH/USD, open=3166.54, high=3171.79, low=3166.54, close=3171.16, start=2024-07-25T03:25:04.249785, tickCount=4592}
+2024-07-25 11:30:32,729 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 89, key = b9acdfc3-7f23-4189-9aeb-4ba28d7946d7, value = 1M CandleStick{symbol=BTC/USD, open=64088.1, high=64159.25, low=64082.3, close=64154.6, start=2024-07-25T03:25:04.244795, tickCount=4592}
+2024-07-25 11:30:32,729 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 90, key = 80f0c548-dd27-4bbe-b078-a76ad8074a2a, value = 1M CandleStick{symbol=ETH/USD, open=3166.54, high=3171.79, low=3166.54, close=3171.16, start=2024-07-25T03:25:04.249785, tickCount=4592}
+2024-07-25 11:30:44,372 INFO o.d.c.DataProcessor [Thread-9] faef8b29-8ea3-4125-93d1-6c56aa0c999e - 1M CandleStick{symbol=BTC/USD, open=64154.6, high=64187.9, low=64148.9, close=64183.35, start=2024-07-25T03:26:04.226355, tickCount=5714}
+2024-07-25 11:30:44,372 INFO o.d.c.DataProcessor [Thread-9] bbd4722c-d16b-4f08-babd-c46692ed1d5e - 1M CandleStick{symbol=ETH/USD, open=3171.13, high=3173.575, low=3170.83, close=3173.31, start=2024-07-25T03:26:04.251544, tickCount=5714}
+2024-07-25 11:30:44,375 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 91, key = faef8b29-8ea3-4125-93d1-6c56aa0c999e, value = 1M CandleStick{symbol=BTC/USD, open=64154.6, high=64187.9, low=64148.9, close=64183.35, start=2024-07-25T03:26:04.226355, tickCount=5714}
+2024-07-25 11:30:44,375 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 92, key = bbd4722c-d16b-4f08-babd-c46692ed1d5e, value = 1M CandleStick{symbol=ETH/USD, open=3171.13, high=3173.575, low=3170.83, close=3173.31, start=2024-07-25T03:26:04.251544, tickCount=5714}
+2024-07-25 11:30:55,737 INFO o.d.c.DataProcessor [Thread-9] f198b711-05aa-4f64-a05e-40bf7b8fa7ea - 1M CandleStick{symbol=BTC/USD, open=64183.05, high=64199.25, low=64160.85, close=64178.149999999994, start=2024-07-25T03:27:04.252341, tickCount=5636}
+2024-07-25 11:30:55,737 INFO o.d.c.DataProcessor [Thread-9] 494e98a6-2441-4a22-b77f-bba2878c2906 - 1M CandleStick{symbol=ETH/USD, open=3173.31, high=3174.92, low=3173.165, close=3173.95, start=2024-07-25T03:27:04.101390, tickCount=5636}
+2024-07-25 11:30:55,794 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 93, key = f198b711-05aa-4f64-a05e-40bf7b8fa7ea, value = 1M CandleStick{symbol=BTC/USD, open=64183.05, high=64199.25, low=64160.85, close=64178.149999999994, start=2024-07-25T03:27:04.252341, tickCount=5636}
+2024-07-25 11:30:55,794 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 94, key = 494e98a6-2441-4a22-b77f-bba2878c2906, value = 1M CandleStick{symbol=ETH/USD, open=3173.31, high=3174.92, low=3173.165, close=3173.95, start=2024-07-25T03:27:04.101390, tickCount=5636}
+2024-07-25 11:41:23,682 INFO o.d.App [main] start ...
+2024-07-25 11:41:23,687 INFO o.d.App [main] execution duration 20 mins
+2024-07-25 11:41:23,690 INFO o.d.App [main] currency pairs : [BTC/USD, ETH/USD]
+2024-07-25 11:41:23,691 INFO o.d.n.DefaultWebSocketClient [Thread-0] Connecting...
+2024-07-25 11:41:23,790 INFO o.a.k.c.p.ProducerConfig [main] Idempotence will be disabled because retries is set to 0.
+2024-07-25 11:41:23,790 INFO o.a.k.c.p.ProducerConfig [main] ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-07-25 11:41:23,819 INFO o.a.k.c.t.i.KafkaMetricsCollector [main] initializing Kafka metrics collector
+2024-07-25 11:41:23,879 INFO o.a.k.c.u.AppInfoParser [main] Kafka version: 3.7.1
+2024-07-25 11:41:23,879 INFO o.a.k.c.u.AppInfoParser [main] Kafka commitId: e2494e6ffb89f828
+2024-07-25 11:41:23,879 INFO o.a.k.c.u.AppInfoParser [main] Kafka startTimeMs: 1721878883878
+2024-07-25 11:41:23,894 INFO o.a.k.c.c.ConsumerConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-07-25 11:41:23,910 INFO o.a.k.c.t.i.KafkaMetricsCollector [main] initializing Kafka metrics collector
+2024-07-25 11:41:23,956 INFO o.a.k.c.u.AppInfoParser [main] Kafka version: 3.7.1
+2024-07-25 11:41:23,956 INFO o.a.k.c.u.AppInfoParser [main] Kafka commitId: e2494e6ffb89f828
+2024-07-25 11:41:23,956 INFO o.a.k.c.u.AppInfoParser [main] Kafka startTimeMs: 1721878883956
+2024-07-25 11:41:23,959 INFO o.a.k.c.c.i.LegacyKafkaConsumer [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Subscribed to topic(s): market
+2024-07-25 11:41:24,174 INFO o.a.k.c.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Cluster ID: 9y5fpnhCTsqD1QMPs1DHdw
+2024-07-25 11:41:24,175 INFO o.a.k.c.Metadata [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Cluster ID: 9y5fpnhCTsqD1QMPs1DHdw
+2024-07-25 11:41:24,176 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Discovered group coordinator DUDUWEIWEI:9092 (id: 2147483647 rack: null)
+2024-07-25 11:41:24,181 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2024-07-25 11:41:24,191 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Request joining group due to: need to re-join with the given member-id: consumer-test-1-f4b52a90-9b16-4b1e-9374-f03e63af9a82
+2024-07-25 11:41:24,191 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2024-07-25 11:41:24,193 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Successfully joined group with generation Generation{generationId=9, memberId='consumer-test-1-f4b52a90-9b16-4b1e-9374-f03e63af9a82', protocol='range'}
+2024-07-25 11:41:24,201 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Finished assignment for group at generation 9: {consumer-test-1-f4b52a90-9b16-4b1e-9374-f03e63af9a82=Assignment(partitions=[market-0])}
+2024-07-25 11:41:24,205 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Successfully synced group in generation Generation{generationId=9, memberId='consumer-test-1-f4b52a90-9b16-4b1e-9374-f03e63af9a82', protocol='range'}
+2024-07-25 11:41:24,205 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Notifying assignor about the new Assignment(partitions=[market-0])
+2024-07-25 11:41:24,207 INFO o.a.k.c.c.i.ConsumerRebalanceListenerInvoker [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Adding newly assigned partitions: market-0
+2024-07-25 11:41:24,213 INFO o.a.k.c.c.i.ConsumerUtils [Thread-11] Setting offset for partition market-0 to the committed offset FetchPosition{offset=95, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[DUDUWEIWEI:9092 (id: 0 rack: null)], epoch=0}}
+2024-07-25 11:41:25,874 INFO o.d.n.ClientEndPoint [WebSocket@2124764831-46] Connected with server
+2024-07-25 11:41:25,878 INFO o.d.n.ClientEndPoint [WebSocket@2124764831-46] {   "method": "subscribe","params": {"channel": "book","snapshot": true,"symbol": [ "BTC/USD","ETH/USD" ]},"req_id": 1234567890 }
+2024-07-25 11:41:25,881 INFO o.d.n.DefaultWebSocketClient [Thread-0] Connected...
+2024-07-25 11:42:26,651 INFO o.d.c.DataProcessor [Thread-9] f7bec4fd-5f96-41e8-b3ef-cbb69576948f - 1M CandleStick{symbol=BTC/USD, open=64165.35, high=64174.75, low=64080.45, close=64174.75, start=2024-07-25T03:41:24.924709, tickCount=8025}
+2024-07-25 11:42:26,664 INFO o.d.c.DataProcessor [Thread-9] 9ebfde18-5eac-4340-b6b4-ddefb90d1995 - 1M CandleStick{symbol=ETH/USD, open=3163.66, high=3163.9, low=3159.045, close=3160.1949999999997, start=2024-07-25T03:41:24.919808, tickCount=8025}
+2024-07-25 11:42:26,672 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 95, key = f7bec4fd-5f96-41e8-b3ef-cbb69576948f, value = 1M CandleStick{symbol=BTC/USD, open=64165.35, high=64174.75, low=64080.45, close=64174.75, start=2024-07-25T03:41:24.924709, tickCount=8025}
+2024-07-25 11:42:26,777 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 96, key = 9ebfde18-5eac-4340-b6b4-ddefb90d1995, value = 1M CandleStick{symbol=ETH/USD, open=3163.66, high=3163.9, low=3159.045, close=3160.1949999999997, start=2024-07-25T03:41:24.919808, tickCount=8025}
+2024-07-25 11:44:40,068 INFO o.d.c.DataProcessor [Thread-9] ddbcb770-ecad-40ed-b367-171ed8f69a3b - 1M CandleStick{symbol=BTC/USD, open=64105.25, high=64106.75, low=64013.9, close=64088.5, start=2024-07-25T03:42:24.918531, tickCount=11307}
+2024-07-25 11:44:40,068 INFO o.d.c.DataProcessor [Thread-9] 2d5fd8f7-c278-453d-bc77-c4d28158fefa - 1M CandleStick{symbol=ETH/USD, open=3160.09, high=3162.745, low=3155.9, close=3162.0249999999996, start=2024-07-25T03:42:24.970443, tickCount=11307}
+2024-07-25 11:44:40,093 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 97, key = ddbcb770-ecad-40ed-b367-171ed8f69a3b, value = 1M CandleStick{symbol=BTC/USD, open=64105.25, high=64106.75, low=64013.9, close=64088.5, start=2024-07-25T03:42:24.918531, tickCount=11307}
+2024-07-25 11:44:40,093 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 98, key = 2d5fd8f7-c278-453d-bc77-c4d28158fefa, value = 1M CandleStick{symbol=ETH/USD, open=3160.09, high=3162.745, low=3155.9, close=3162.0249999999996, start=2024-07-25T03:42:24.970443, tickCount=11307}
+2024-07-25 11:47:19,557 INFO o.d.c.DataProcessor [Thread-9] dd656e63-0299-4a54-93b6-e3849883df6a - 1M CandleStick{symbol=BTC/USD, open=64088.5, high=64097.05, low=63928.95, close=63950.45, start=2024-07-25T03:43:24.925703, tickCount=10279}
+2024-07-25 11:47:19,557 INFO o.d.c.DataProcessor [Thread-9] ca13c2e9-0c16-4919-b799-b42d10b3b607 - 1M CandleStick{symbol=ETH/USD, open=3161.885, high=3163.025, low=3158.465, close=3159.715, start=2024-07-25T03:43:24.978974, tickCount=10279}
+2024-07-25 11:47:19,664 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 99, key = dd656e63-0299-4a54-93b6-e3849883df6a, value = 1M CandleStick{symbol=BTC/USD, open=64088.5, high=64097.05, low=63928.95, close=63950.45, start=2024-07-25T03:43:24.925703, tickCount=10279}
+2024-07-25 11:47:19,664 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 100, key = ca13c2e9-0c16-4919-b799-b42d10b3b607, value = 1M CandleStick{symbol=ETH/USD, open=3161.885, high=3163.025, low=3158.465, close=3159.715, start=2024-07-25T03:43:24.978974, tickCount=10279}
+2024-07-25 11:49:47,216 INFO o.d.c.DataProcessor [Thread-9] b1f27387-ea2f-4bb2-98e5-1c21fe719ac4 - 1M CandleStick{symbol=BTC/USD, open=63948.3, high=63991.9, low=63946.3, close=63968.600000000006, start=2024-07-25T03:44:25.011445, tickCount=9511}
+2024-07-25 11:49:47,217 INFO o.d.c.DataProcessor [Thread-9] f92e51fb-e89e-4dcb-a9c1-63396ac004ee - 1M CandleStick{symbol=ETH/USD, open=3159.715, high=3162.96, low=3159.3450000000003, close=3160.725, start=2024-07-25T03:44:24.967537, tickCount=9511}
+2024-07-25 11:49:47,219 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 101, key = b1f27387-ea2f-4bb2-98e5-1c21fe719ac4, value = 1M CandleStick{symbol=BTC/USD, open=63948.3, high=63991.9, low=63946.3, close=63968.600000000006, start=2024-07-25T03:44:25.011445, tickCount=9511}
+2024-07-25 11:49:47,334 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 102, key = f92e51fb-e89e-4dcb-a9c1-63396ac004ee, value = 1M CandleStick{symbol=ETH/USD, open=3159.715, high=3162.96, low=3159.3450000000003, close=3160.725, start=2024-07-25T03:44:24.967537, tickCount=9511}
+2024-07-25 11:50:24,256 INFO o.a.k.c.NetworkClient [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Node -1 disconnected.
+2024-07-25 11:50:47,225 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Node -1 disconnected.
+2024-07-25 11:51:43,852 INFO o.d.c.DataProcessor [Thread-9] dd3cf229-e3ba-48ee-9489-ffe04353c425 - 1M CandleStick{symbol=BTC/USD, open=63968.600000000006, high=63969.9, low=63940.85, close=63944.2, start=2024-07-25T03:45:25.011108, tickCount=7516}
+2024-07-25 11:51:43,852 INFO o.d.c.DataProcessor [Thread-9] 58805945-97d7-41f8-8cef-b257781a7b1a - 1M CandleStick{symbol=ETH/USD, open=3160.72, high=3161.21, low=3158.6899999999996, close=3160.125, start=2024-07-25T03:45:25.011829, tickCount=7516}
+2024-07-25 11:51:43,896 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 103, key = dd3cf229-e3ba-48ee-9489-ffe04353c425, value = 1M CandleStick{symbol=BTC/USD, open=63968.600000000006, high=63969.9, low=63940.85, close=63944.2, start=2024-07-25T03:45:25.011108, tickCount=7516}
+2024-07-25 11:51:43,896 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 104, key = 58805945-97d7-41f8-8cef-b257781a7b1a, value = 1M CandleStick{symbol=ETH/USD, open=3160.72, high=3161.21, low=3158.6899999999996, close=3160.125, start=2024-07-25T03:45:25.011829, tickCount=7516}
+2024-07-25 11:53:59,890 INFO o.d.c.DataProcessor [Thread-9] fbf55d58-387f-45fe-8144-a96abe6fcbc0 - 1M CandleStick{symbol=BTC/USD, open=63947.8, high=63976.85, low=63843.8, close=63948.05, start=2024-07-25T03:46:25.011925, tickCount=8759}
+2024-07-25 11:53:59,892 INFO o.d.c.DataProcessor [Thread-9] 59a8db13-ca96-4449-829f-84570d9e7bab - 1M CandleStick{symbol=ETH/USD, open=3160.125, high=3163.5299999999997, low=3158.0150000000003, close=3163.085, start=2024-07-25T03:46:24.988955, tickCount=8759}
+2024-07-25 11:53:59,912 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 105, key = fbf55d58-387f-45fe-8144-a96abe6fcbc0, value = 1M CandleStick{symbol=BTC/USD, open=63947.8, high=63976.85, low=63843.8, close=63948.05, start=2024-07-25T03:46:25.011925, tickCount=8759}
+2024-07-25 11:53:59,912 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 106, key = 59a8db13-ca96-4449-829f-84570d9e7bab, value = 1M CandleStick{symbol=ETH/USD, open=3160.125, high=3163.5299999999997, low=3158.0150000000003, close=3163.085, start=2024-07-25T03:46:24.988955, tickCount=8759}
+2024-07-25 11:55:26,385 INFO o.d.c.DataProcessor [Thread-9] 433dd599-d7ea-4dde-b72c-5b5f9eff8b8a - 1M CandleStick{symbol=BTC/USD, open=63948.05, high=63991.4, low=63939.85, close=63977.95, start=2024-07-25T03:47:25.000147, tickCount=5572}
+2024-07-25 11:55:26,387 INFO o.d.c.DataProcessor [Thread-9] a33bfbb0-0582-4d31-a101-feb100515d2f - 1M CandleStick{symbol=ETH/USD, open=3162.8450000000003, high=3164.66, low=3162.5950000000003, close=3164.06, start=2024-07-25T03:47:25.012698, tickCount=5572}
+2024-07-25 11:55:26,496 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 107, key = 433dd599-d7ea-4dde-b72c-5b5f9eff8b8a, value = 1M CandleStick{symbol=BTC/USD, open=63948.05, high=63991.4, low=63939.85, close=63977.95, start=2024-07-25T03:47:25.000147, tickCount=5572}
+2024-07-25 11:55:26,496 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 108, key = a33bfbb0-0582-4d31-a101-feb100515d2f, value = 1M CandleStick{symbol=ETH/USD, open=3162.8450000000003, high=3164.66, low=3162.5950000000003, close=3164.06, start=2024-07-25T03:47:25.012698, tickCount=5572}
+2024-07-25 11:56:33,692 INFO o.d.c.DataProcessor [Thread-9] 80c5b10a-644f-49ab-9945-7cb96b569e20 - 1M CandleStick{symbol=BTC/USD, open=63979.0, high=63985.35, low=63961.55, close=63976.0, start=2024-07-25T03:48:25.023275, tickCount=4338}
+2024-07-25 11:56:33,694 INFO o.d.c.DataProcessor [Thread-9] d9ad6c64-5e07-4cd8-9751-323a7da87e52 - 1M CandleStick{symbol=ETH/USD, open=3164.06, high=3165.3, low=3163.935, close=3164.73, start=2024-07-25T03:48:24.998528, tickCount=4338}
+2024-07-25 11:56:33,706 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 109, key = 80c5b10a-644f-49ab-9945-7cb96b569e20, value = 1M CandleStick{symbol=BTC/USD, open=63979.0, high=63985.35, low=63961.55, close=63976.0, start=2024-07-25T03:48:25.023275, tickCount=4338}
+2024-07-25 11:56:33,706 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 110, key = d9ad6c64-5e07-4cd8-9751-323a7da87e52, value = 1M CandleStick{symbol=ETH/USD, open=3164.06, high=3165.3, low=3163.935, close=3164.73, start=2024-07-25T03:48:24.998528, tickCount=4338}
+2024-07-25 11:58:41,475 INFO o.d.c.DataProcessor [Thread-9] 5411937e-c204-4db4-9edc-5875afa000e7 - 1M CandleStick{symbol=BTC/USD, open=63976.0, high=63986.2, low=63967.6, close=63975.399999999994, start=2024-07-25T03:49:25.014590, tickCount=8233}
+2024-07-25 11:58:41,476 INFO o.d.c.DataProcessor [Thread-9] 22702b65-b4a7-49b6-bb46-a6395fcd992c - 1M CandleStick{symbol=ETH/USD, open=3164.7799999999997, high=3166.875, low=3164.73, close=3165.795, start=2024-07-25T03:49:25.107962, tickCount=8233}
+2024-07-25 11:58:41,564 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 111, key = 5411937e-c204-4db4-9edc-5875afa000e7, value = 1M CandleStick{symbol=BTC/USD, open=63976.0, high=63986.2, low=63967.6, close=63975.399999999994, start=2024-07-25T03:49:25.014590, tickCount=8233}
+2024-07-25 11:58:41,564 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 112, key = 22702b65-b4a7-49b6-bb46-a6395fcd992c, value = 1M CandleStick{symbol=ETH/USD, open=3164.7799999999997, high=3166.875, low=3164.73, close=3165.795, start=2024-07-25T03:49:25.107962, tickCount=8233}
+2024-07-25 12:00:24,371 INFO o.a.k.c.NetworkClient [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Node -1 disconnected.
+2024-07-25 12:00:41,514 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Node -1 disconnected.
+2024-07-25 12:00:42,179 INFO o.d.c.DataProcessor [Thread-9] 23c4df01-1377-4aa3-9aa5-e3597de427e7 - 1M CandleStick{symbol=BTC/USD, open=63970.6, high=63984.5, low=63970.35, close=63980.25, start=2024-07-25T03:50:25.118755, tickCount=7776}
+2024-07-25 12:00:42,181 INFO o.d.c.DataProcessor [Thread-9] 57839fcc-83e4-442f-8dc0-5f6d95c827ad - 1M CandleStick{symbol=ETH/USD, open=3165.795, high=3167.21, low=3164.1850000000004, close=3165.4300000000003, start=2024-07-25T03:50:25.083261, tickCount=7776}
+2024-07-25 12:00:42,276 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 113, key = 23c4df01-1377-4aa3-9aa5-e3597de427e7, value = 1M CandleStick{symbol=BTC/USD, open=63970.6, high=63984.5, low=63970.35, close=63980.25, start=2024-07-25T03:50:25.118755, tickCount=7776}
+2024-07-25 12:00:42,277 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 114, key = 57839fcc-83e4-442f-8dc0-5f6d95c827ad, value = 1M CandleStick{symbol=ETH/USD, open=3165.795, high=3167.21, low=3164.1850000000004, close=3165.4300000000003, start=2024-07-25T03:50:25.083261, tickCount=7776}

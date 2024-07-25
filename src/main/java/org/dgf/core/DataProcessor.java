@@ -2,11 +2,12 @@ package org.dgf.core;
 
 import com.google.common.base.Preconditions;
 
-import org.dgf.json.JsonUtility;
+import org.dgf.json.JsonParser;
 import org.dgf.json.Quotation;
-import org.dgf.json.SnapshotOrderbook;
+import org.dgf.json.Snapshot;
 import org.dgf.json.TickUpdate;
 import org.dgf.kafka.KafkaProducerClient;
+import org.dgf.util.DateUtility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,7 +26,7 @@ public class DataProcessor implements Runnable {
 
     private final BlockingQueue<Message> queue;
     private volatile boolean isDone = false;
-    private final JsonUtility jsonUtility;
+    private final JsonParser jsonParser;
     private List<OrderBook> orderBook;
     private boolean isSnapshotMessage = true;
     private int DEFAULT_ORDER_NUM = 10;
@@ -33,7 +34,7 @@ public class DataProcessor implements Runnable {
 
     public DataProcessor(BlockingQueue<Message> queue) {
         this.queue = queue;
-        this.jsonUtility = new JsonUtility();
+        this.jsonParser = new JsonParser();
         this.orderBook = new ArrayList<>();
         this.kafkaProducerClient = new KafkaProducerClient();
     }
@@ -164,7 +165,7 @@ public class DataProcessor implements Runnable {
         List<OrderBook> result = current.stream().map(x->  {
                                   var asks = processQuote(x.getAsks().stream().filter(a -> !newAsksZeroQnt.contains(a.getPrice())).toList(), nonZeroQntAsks);
                                   var bids = processQuote(x.getBids().stream().filter(a -> !newBidsZeroQnt.contains(a.getPrice())).toList(), nonZeroQntBids);
-                                  return filterDirtyData(newBook.getSymbol(), asks, bids, newBook.getTimestamp());
+                                  return buildFinalOrderBook(newBook.getSymbol(), asks, bids, newBook.getTimestamp());
                                 }
                         ).toList();
         Preconditions.checkArgument(result.size() == 1, "Wrong size of the orderbook");
@@ -186,7 +187,7 @@ public class DataProcessor implements Runnable {
         return new TickMidPrice(symbol, mid, timestamp);
     }
 
-    private OrderBook filterDirtyData(String symbol, List<Quotation> asks, List<Quotation> bids, LocalDateTime timestamp) {
+    private OrderBook buildFinalOrderBook(String symbol, List<Quotation> asks, List<Quotation> bids, LocalDateTime timestamp) {
         var sortedAsks = asks.stream().sorted((x, y)-> Double.compare(x.getPrice(), y.getPrice())).toList();
         var sortedBids = bids.stream().sorted((x, y)-> Double.compare(y.getPrice(), x.getPrice())).toList();
 
@@ -211,7 +212,7 @@ public class DataProcessor implements Runnable {
                 break;
             }
         }
-*/
+        */
         var orderedAsks = sortedAsks.stream().limit(DEFAULT_ORDER_NUM).toList();
         var orderedBids = sortedBids.stream().limit(DEFAULT_ORDER_NUM).toList();
 
@@ -228,9 +229,8 @@ public class DataProcessor implements Runnable {
         }
         logger.debug("new {}", newOrderBook);
         logger.debug("current {}", this.orderBook);
-        List<OrderBook> current = this.orderBook;
-        List<OrderBook> adjusted = newOrderBook
-                                  .stream()
+        var current = this.orderBook;
+        var adjusted = newOrderBook.stream()
                                   .map(x -> processNewBook(current.stream().filter(y -> y.getSymbol().equals(x.getSymbol())).toList(),
                                                           x,
                                                           x.getAsks().stream().filter(ask-> Double.compare(ask.getQuantity(), 0) == 0).map(y->y.getPrice()).toList(),
@@ -255,16 +255,16 @@ public class DataProcessor implements Runnable {
 
     private List<OrderBook> parseMessage(Message message)
     {
-        Optional<SnapshotOrderbook> snapshotOrderbook = Optional.empty();
+        Optional<Snapshot> snapshot = Optional.empty();
         Optional<TickUpdate> tickUpdate = Optional.empty();
 
         if (message.getType().equals("snapshot")) {
-            snapshotOrderbook = this.jsonUtility.parseSnapshot(message.getValue());
+            snapshot = this.jsonParser.parseSnapshot(message.getValue());
             this.isSnapshotMessage = true;
-            return snapshotOrderbook.map(x-> buildOrderBookFromSnapshot(x)).orElse(List.of());
+            return snapshot.map(x-> buildOrderBookFromSnapshot(x)).orElse(List.of());
         }
         else if (message.getType().equals("update")) {
-            tickUpdate = this.jsonUtility.parseTickUpdate(message.getValue());
+            tickUpdate = this.jsonParser.parseTickUpdate(message.getValue());
             this.isSnapshotMessage = false;
             return tickUpdate.map(x -> buildOrderBookFromUpdate(x)).orElse(List.of());
         }
@@ -272,10 +272,10 @@ public class DataProcessor implements Runnable {
         return List.of();
     }
 
-    private List<OrderBook> buildOrderBookFromSnapshot(SnapshotOrderbook snapshotOrderbook)
+    private List<OrderBook> buildOrderBookFromSnapshot(Snapshot snapshot)
     {
         LocalDateTime now = LocalDateTime.now();
-        List<SnapshotOrderbook.Data> data = snapshotOrderbook.getData();
+        List<Snapshot.Data> data = snapshot.getData();
         return  data.stream()
                 .map(x -> new OrderBook(x.getSymbol(), x.getBids(), x.getAsks(), null))
                 .collect(Collectors.toList());

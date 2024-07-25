@@ -8,7 +8,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class SnapshotOrderbookTest {
+public class SnapshotTest {
 
     @Test
     public void ParseNormalSnapshotJson_ReturnExpectedResult() {
@@ -28,15 +28,15 @@ public class SnapshotOrderbookTest {
                             "{\"price\":64369.7,\"qty\":0.00095433}]," +
                             "\"checksum\":2124886230}]" +
                 "}";
-        final JsonUtility utility = new JsonUtility();
-        Optional<SnapshotOrderbook> snapshot = utility.parseSnapshot(json);
+        final JsonParser utility = new JsonParser();
+        Optional<Snapshot> snapshot = utility.parseSnapshot(json);
         assertTrue(snapshot.isPresent());
 
         assertEquals("book", snapshot.get().getChannel());
         assertEquals("snapshot", snapshot.get().getType());
         assertTrue(snapshot.get().getData().size() == 1);
 
-        SnapshotOrderbook.Data data = snapshot.get().getData().get(0);
+        Snapshot.Data data = snapshot.get().getData().get(0);
         assertEquals("BTC/USD", data.getSymbol());
         assertEquals("2124886230", data.getChecksum());
 

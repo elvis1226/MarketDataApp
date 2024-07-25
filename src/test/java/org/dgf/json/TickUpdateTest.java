@@ -15,7 +15,7 @@ public class TickUpdateTest {
                 "\"bids\":[{\"price\":64359.4,\"qty\":1.55377409}]," +
                 "\"asks\":[{\"price\":64359.4,\"qty\":1.55377409}]," +
                 "\"checksum\":2450216282,\"timestamp\":\"2024-07-19T12:50:10.319287Z\"}]}";
-        final JsonUtility utility = new JsonUtility();
+        final JsonParser utility = new JsonParser();
         Optional<TickUpdate> update = utility.parseTickUpdate(json);
         assertTrue(update.isPresent());
         assertEquals("book", update.get().getChannel());
@@ -42,7 +42,7 @@ public class TickUpdateTest {
                 "\"bids\":[{\"price\":64359.4,\"qty\":1.55377409}]," +
                 "\"asks\":[]," +
                 "\"checksum\":2450216282,\"timestamp\":\"2024-07-19T12:50:10.319287Z\"}]}";
-        final JsonUtility utility = new JsonUtility();
+        final JsonParser utility = new JsonParser();
         Optional<TickUpdate> update = utility.parseTickUpdate(json);
         assertTrue(update.isPresent());
         assertEquals("book", update.get().getChannel());
@@ -67,7 +67,7 @@ public class TickUpdateTest {
                 "\"bids\":[]," +
                 "\"asks\":[{\"price\":64359.4,\"qty\":1.55377409}]," +
                 "\"checksum\":2450216282,\"timestamp\":\"2024-07-19T12:50:10.319287Z\"}]}";
-        final JsonUtility utility = new JsonUtility();
+        final JsonParser utility = new JsonParser();
         Optional<TickUpdate> update = utility.parseTickUpdate(json);
         assertTrue(update.isPresent());
         assertEquals("book", update.get().getChannel());

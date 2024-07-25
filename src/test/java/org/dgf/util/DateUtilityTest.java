@@ -1,5 +1,6 @@
-package org.dgf.core;
+package org.dgf.util;
 
+import org.dgf.util.DateUtility;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;

@@ -8,11 +8,11 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.util.Optional;
 
-public class JsonUtility {
+public class JsonParser {
 
     private final ObjectMapper objectMapper;
 
-    public JsonUtility() {
+    public JsonParser() {
         this.objectMapper = new ObjectMapper();
         // to enable standard indentation ("pretty-printing"):
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
@@ -41,9 +41,9 @@ public class JsonUtility {
         }
     }
 
-    public Optional<SnapshotOrderbook>  parseSnapshot(String input) {
+    public Optional<Snapshot>  parseSnapshot(String input) {
         try {
-            SnapshotOrderbook snapshot = this.objectMapper.readValue(input, SnapshotOrderbook.class);
+            Snapshot snapshot = this.objectMapper.readValue(input, Snapshot.class);
             return Optional.of(snapshot);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
