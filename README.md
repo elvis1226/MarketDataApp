@@ -30,6 +30,7 @@ Sample log output pls refer to App.log
 1. Need to handle the case perfectly when the highest bid price is bigger than lowest ask price
 2. currently subscribe 10 best order books as default but could be configured if required
 3. Coding style and formatting 
+4. Unit test
 
 
 
