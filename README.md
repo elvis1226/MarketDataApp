@@ -24,7 +24,7 @@ The maven build will generate a fat jar with all dependence via shade plugin
 > java -cp Application-1.0-SNAPSHOT-shaded.jar org.dgf.App "BTC/USD,ETH/USD" 30
 
 **NB**
-Sample log output pls refer to App.log
+refer to simple log app.log
 
 # Outstanding
 1. Need to handle the case perfectly when the highest bid price is bigger than lowest ask price
