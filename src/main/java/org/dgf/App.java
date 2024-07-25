@@ -5,6 +5,7 @@ import org.dgf.core.DataExtractor;
 import org.dgf.core.DataProcessor;
 import org.dgf.core.DataResult;
 import org.dgf.core.Message;
+import org.dgf.kafka.KafkaConsumerClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -35,7 +36,7 @@ public class App
         }
         DataProcessor processor = null;
         DataExtractor extractor = null;
-
+        KafkaConsumerClient kafkaConsumerClient = null;
         try {
             logger.info("start ...");
             int duration = Integer.parseInt(args[1]);
@@ -47,11 +48,17 @@ public class App
 
             final BlockingQueue<Message> queue = new LinkedBlockingQueue(MAX_QUEUE_NUM);
 
+            //extractor thread
             extractor = new DataExtractor(wssHost, pairs, queue);
             new Thread(extractor).start();
 
+            //processor thread
             processor = new DataProcessor(queue);
             new Thread(processor).start();
+
+            //kafka consumer thread
+            kafkaConsumerClient = new KafkaConsumerClient();
+            new Thread(kafkaConsumerClient).start();
 
             //sleep until reach the duration
             Thread.sleep(duration * 60 * 1000);
@@ -67,6 +74,9 @@ public class App
             }
             if (extractor != null) {
                 extractor.complete();
+            }
+            if (kafkaConsumerClient != null) {
+                kafkaConsumerClient.close();
             }
         }
     }

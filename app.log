@@ -1,26 +1,239 @@
-2024-07-24 18:43:49,168 INFO o.d.App [main] start ...
-2024-07-24 18:43:49,174 INFO o.d.App [main] execution duration 20 mins
-2024-07-24 18:43:49,176 INFO o.d.App [main] currency pairs : [BTC/USD, XBT/USD]
-2024-07-24 18:43:49,178 INFO o.d.n.DefaultWebSocketClient [Thread-0] Connecting...
-2024-07-24 18:43:51,401 INFO o.d.n.ClientEndPoint [WebSocket@1386077210-46] Connected with server
-2024-07-24 18:43:51,404 INFO o.d.n.ClientEndPoint [WebSocket@1386077210-46] {   "method": "subscribe","params": {"channel": "book","snapshot": true,"symbol": [ "BTC/USD","XBT/USD" ]},"req_id": 1234567890 }
-2024-07-24 18:43:51,407 INFO o.d.n.DefaultWebSocketClient [Thread-0] Connected...
-2024-07-24 18:44:51,914 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66478.5, high=66478.5, low=66450.95, close=66465.9, start=2024-07-24T10:43:50.027116, tickCount=603}
-2024-07-24 18:45:52,033 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66455.25, high=66487.7, low=66455.25, close=66487.45, start=2024-07-24T10:44:50.193027, tickCount=625}
-2024-07-24 18:46:52,041 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66479.05, high=66532.35, low=66471.75, close=66528.0, start=2024-07-24T10:45:50.313785, tickCount=2838}
-2024-07-24 18:47:52,347 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66527.0, high=66530.2, low=66516.8, close=66523.6, start=2024-07-24T10:46:50.330870, tickCount=2438}
-2024-07-24 18:48:52,420 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66524.85, high=66541.55, low=66509.85, close=66531.85, start=2024-07-24T10:47:50.476596, tickCount=2292}
-2024-07-24 18:49:52,457 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66541.85, high=66542.65, low=66447.4, close=66455.6, start=2024-07-24T10:48:50.698556, tickCount=3380}
-2024-07-24 18:50:52,491 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66456.25, high=66465.9, low=66452.05, close=66463.95, start=2024-07-24T10:49:50.736858, tickCount=1321}
-2024-07-24 18:51:52,473 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66457.20000000001, high=66507.7, low=66450.5, close=66505.20000000001, start=2024-07-24T10:50:50.749923, tickCount=1980}
-2024-07-24 18:52:52,527 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66504.54999999999, high=66518.25, low=66502.29999999999, close=66508.5, start=2024-07-24T10:51:50.760203, tickCount=2549}
-2024-07-24 18:53:52,529 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66513.6, high=66513.6, low=66492.15, close=66496.35, start=2024-07-24T10:52:50.809946, tickCount=1903}
-2024-07-24 18:54:52,649 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66500.4, high=66503.5, low=66484.85, close=66498.55, start=2024-07-24T10:53:50.814917, tickCount=1950}
-2024-07-24 18:55:53,191 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66492.79999999999, high=66507.35, low=66485.8, close=66498.5, start=2024-07-24T10:54:50.931262, tickCount=2243}
-2024-07-24 18:56:53,195 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66496.95, high=66500.0, low=66484.1, close=66488.29999999999, start=2024-07-24T10:55:51.471286, tickCount=1598}
-2024-07-24 18:57:54,369 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66486.9, high=66495.95, low=66485.5, close=66488.85, start=2024-07-24T10:56:51.477511, tickCount=1586}
-2024-07-24 18:58:54,402 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66491.45, high=66520.0, low=66488.15, close=66508.35, start=2024-07-24T10:57:52.638912, tickCount=1947}
-2024-07-24 18:59:54,457 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66515.85, high=66515.85, low=66481.35, close=66499.29999999999, start=2024-07-24T10:58:52.681883, tickCount=2504}
-2024-07-24 19:00:54,517 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66494.1, high=66538.45000000001, low=66490.75, close=66530.75, start=2024-07-24T10:59:52.730548, tickCount=2562}
-2024-07-24 19:01:54,962 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66529.3, high=66549.85, low=66529.0, close=66543.45000000001, start=2024-07-24T11:00:52.791875, tickCount=2634}
-2024-07-24 19:02:55,910 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=66540.7, high=66542.9, low=66476.54999999999, close=66493.85, start=2024-07-24T11:01:53.238284, tickCount=1163}
+2024-07-25 10:40:36,006 INFO o.d.App [main] start ...
+2024-07-25 10:40:36,011 INFO o.d.App [main] execution duration 20 mins
+2024-07-25 10:40:36,014 INFO o.d.App [main] currency pairs : [BTC/USD, XBT/USD]
+2024-07-25 10:40:36,015 INFO o.d.n.DefaultWebSocketClient [Thread-0] Connecting...
+2024-07-25 10:40:36,109 INFO o.a.k.c.p.ProducerConfig [main] Idempotence will be disabled because retries is set to 0.
+2024-07-25 10:40:36,109 INFO o.a.k.c.p.ProducerConfig [main] ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-07-25 10:40:36,136 INFO o.a.k.c.t.i.KafkaMetricsCollector [main] initializing Kafka metrics collector
+2024-07-25 10:40:36,193 INFO o.a.k.c.u.AppInfoParser [main] Kafka version: 3.7.1
+2024-07-25 10:40:36,193 INFO o.a.k.c.u.AppInfoParser [main] Kafka commitId: e2494e6ffb89f828
+2024-07-25 10:40:36,193 INFO o.a.k.c.u.AppInfoParser [main] Kafka startTimeMs: 1721875236192
+2024-07-25 10:40:36,206 INFO o.a.k.c.c.ConsumerConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-07-25 10:40:36,217 INFO o.a.k.c.t.i.KafkaMetricsCollector [main] initializing Kafka metrics collector
+2024-07-25 10:40:36,256 INFO o.a.k.c.u.AppInfoParser [main] Kafka version: 3.7.1
+2024-07-25 10:40:36,256 INFO o.a.k.c.u.AppInfoParser [main] Kafka commitId: e2494e6ffb89f828
+2024-07-25 10:40:36,256 INFO o.a.k.c.u.AppInfoParser [main] Kafka startTimeMs: 1721875236256
+2024-07-25 10:40:36,259 INFO o.a.k.c.c.i.LegacyKafkaConsumer [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Subscribed to topic(s): market
+2024-07-25 10:40:36,474 INFO o.a.k.c.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Cluster ID: 9y5fpnhCTsqD1QMPs1DHdw
+2024-07-25 10:40:36,476 INFO o.a.k.c.Metadata [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Cluster ID: 9y5fpnhCTsqD1QMPs1DHdw
+2024-07-25 10:40:36,477 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Discovered group coordinator DUDUWEIWEI:9092 (id: 2147483647 rack: null)
+2024-07-25 10:40:36,481 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2024-07-25 10:40:36,490 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Request joining group due to: need to re-join with the given member-id: consumer-test-1-93bcc59e-b020-46bd-a4ca-be8835bbf42a
+2024-07-25 10:40:36,491 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2024-07-25 10:40:36,492 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Successfully joined group with generation Generation{generationId=5, memberId='consumer-test-1-93bcc59e-b020-46bd-a4ca-be8835bbf42a', protocol='range'}
+2024-07-25 10:40:36,499 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Finished assignment for group at generation 5: {consumer-test-1-93bcc59e-b020-46bd-a4ca-be8835bbf42a=Assignment(partitions=[market-0])}
+2024-07-25 10:40:36,502 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Successfully synced group in generation Generation{generationId=5, memberId='consumer-test-1-93bcc59e-b020-46bd-a4ca-be8835bbf42a', protocol='range'}
+2024-07-25 10:40:36,503 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Notifying assignor about the new Assignment(partitions=[market-0])
+2024-07-25 10:40:36,504 INFO o.a.k.c.c.i.ConsumerRebalanceListenerInvoker [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Adding newly assigned partitions: market-0
+2024-07-25 10:40:36,512 INFO o.a.k.c.c.i.ConsumerUtils [Thread-11] Setting offset for partition market-0 to the committed offset FetchPosition{offset=42, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[DUDUWEIWEI:9092 (id: 0 rack: null)], epoch=0}}
+2024-07-25 10:40:38,116 INFO o.d.n.ClientEndPoint [WebSocket@830822003-47] Connected with server
+2024-07-25 10:40:38,119 INFO o.d.n.ClientEndPoint [WebSocket@830822003-47] {   "method": "subscribe","params": {"channel": "book","snapshot": true,"symbol": [ "BTC/USD","XBT/USD" ]},"req_id": 1234567890 }
+2024-07-25 10:40:38,122 INFO o.d.n.DefaultWebSocketClient [Thread-0] Connected...
+2024-07-25 10:41:38,768 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=64253.5, high=64255.850000000006, low=64201.95, close=64232.45, start=2024-07-25T02:40:37.121847, tickCount=3708}
+2024-07-25 10:41:38,809 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 42, key = 0c4455ee-62b7-416e-ba30-b3e150a2a12e, value = 1M CandleStick{symbol=BTC/USD, open=64253.5, high=64255.850000000006, low=64201.95, close=64232.45, start=2024-07-25T02:40:37.121847, tickCount=3708}
+2024-07-25 10:42:38,804 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=64230.649999999994, high=64236.1, low=64209.25, close=64218.5, start=2024-07-25T02:41:37.144607, tickCount=4144}
+2024-07-25 10:42:38,808 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 43, key = 8a12a86b-c314-47a1-8529-1ee7ddff0d31, value = 1M CandleStick{symbol=BTC/USD, open=64230.649999999994, high=64236.1, low=64209.25, close=64218.5, start=2024-07-25T02:41:37.144607, tickCount=4144}
+2024-07-25 10:43:38,810 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=64224.25, high=64232.25, low=64209.75, close=64218.850000000006, start=2024-07-25T02:42:37.187334, tickCount=4275}
+2024-07-25 10:43:38,909 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 44, key = be903c19-135a-446f-b316-db7fb9917f6a, value = 1M CandleStick{symbol=BTC/USD, open=64224.25, high=64232.25, low=64209.75, close=64218.850000000006, start=2024-07-25T02:42:37.187334, tickCount=4275}
+2024-07-25 10:44:38,991 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=64225.9, high=64231.850000000006, low=64171.2, close=64178.149999999994, start=2024-07-25T02:43:37.194522, tickCount=3790}
+2024-07-25 10:44:39,106 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 45, key = 3dd89401-7389-4a8b-8a60-bf6166866c30, value = 1M CandleStick{symbol=BTC/USD, open=64225.9, high=64231.850000000006, low=64171.2, close=64178.149999999994, start=2024-07-25T02:43:37.194522, tickCount=3790}
+2024-07-25 10:45:38,963 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=64179.649999999994, high=64181.399999999994, low=64071.55, close=64079.350000000006, start=2024-07-25T02:44:37.232699, tickCount=4961}
+2024-07-25 10:45:38,968 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 46, key = 19caebb9-3af6-466d-81a1-53ee273a0c11, value = 1M CandleStick{symbol=BTC/USD, open=64179.649999999994, high=64181.399999999994, low=64071.55, close=64079.350000000006, start=2024-07-25T02:44:37.232699, tickCount=4961}
+2024-07-25 10:46:39,113 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=64075.65, high=64092.25, low=63991.3, close=64003.899999999994, start=2024-07-25T02:45:37.342952, tickCount=5986}
+2024-07-25 10:46:39,230 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 47, key = 85cc1dee-3fb9-42ec-9da1-edcd4fdd3c57, value = 1M CandleStick{symbol=BTC/USD, open=64075.65, high=64092.25, low=63991.3, close=64003.899999999994, start=2024-07-25T02:45:37.342952, tickCount=5986}
+2024-07-25 10:47:39,996 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=64000.8, high=64158.45, low=63999.7, close=64114.3, start=2024-07-25T02:46:37.444810, tickCount=5367}
+2024-07-25 10:47:40,059 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 48, key = bea3a87d-e779-4f73-a719-c961a0438a33, value = 1M CandleStick{symbol=BTC/USD, open=64000.8, high=64158.45, low=63999.7, close=64114.3, start=2024-07-25T02:46:37.444810, tickCount=5367}
+2024-07-25 10:48:39,143 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=64111.6, high=64122.850000000006, low=64014.399999999994, close=64043.95, start=2024-07-25T02:47:37.454180, tickCount=5686}
+2024-07-25 10:48:39,147 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 49, key = 24b831ee-ebfd-4074-8405-8e3aae409b6f, value = 1M CandleStick{symbol=BTC/USD, open=64111.6, high=64122.850000000006, low=64014.399999999994, close=64043.95, start=2024-07-25T02:47:37.454180, tickCount=5686}
+2024-07-25 10:49:36,518 INFO o.a.k.c.NetworkClient [kafka-coordinator-heartbeat-thread | test] [Consumer clientId=consumer-test-1, groupId=test] Node -1 disconnected.
+2024-07-25 10:49:39,157 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Node -1 disconnected.
+2024-07-25 10:49:39,332 INFO o.d.c.DataProcessor [Thread-9] 1M CandleStick{symbol=BTC/USD, open=64038.0, high=64047.8, low=63931.600000000006, close=63950.8, start=2024-07-25T02:48:37.521709, tickCount=5759}
+2024-07-25 10:49:39,336 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 50, key = 7242aa00-51c3-4917-9143-ae43dbda397a, value = 1M CandleStick{symbol=BTC/USD, open=64038.0, high=64047.8, low=63931.600000000006, close=63950.8, start=2024-07-25T02:48:37.521709, tickCount=5759}

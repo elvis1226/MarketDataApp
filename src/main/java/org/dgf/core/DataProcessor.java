@@ -6,6 +6,7 @@ import org.dgf.json.JsonUtility;
 import org.dgf.json.Quotation;
 import org.dgf.json.SnapshotOrderbook;
 import org.dgf.json.TickUpdate;
+import org.dgf.kafka.KafkaProducerClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,11 +29,13 @@ public class DataProcessor implements Runnable {
     private List<OrderBook> orderBook;
     private boolean isSnapshotMessage = true;
     private int DEFAULT_ORDER_NUM = 10;
+    private KafkaProducerClient kafkaProducerClient;
 
     public DataProcessor(BlockingQueue<Message> queue) {
         this.queue = queue;
         this.jsonUtility = new JsonUtility();
         this.orderBook = new ArrayList<>();
+        this.kafkaProducerClient = new KafkaProducerClient();
     }
 
     @Override
@@ -111,7 +114,10 @@ public class DataProcessor implements Runnable {
                                         size);
            return stick;
         }).toList();
-        sticks.forEach(x -> logger.info(x.toString()));
+        sticks.forEach(x -> {
+            logger.info(x.toString());
+            kafkaProducerClient.send(String.valueOf(UUID.randomUUID()), x.toString() );
+        });
     }
 
     private List<Quotation> processQuote(List<Quotation> current, List<Quotation> newQuote)

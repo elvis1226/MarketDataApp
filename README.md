@@ -6,8 +6,10 @@ This program is to extract the tick data from kraken via websocket API
 ## High Level Flow
 1. DataExtractor thread will subcribe the snapshot book from kraken and save to in-memory queue
 2. DataProcessor thread will take the message from in-memory queue and aggregate to generate 1min candlestick
-3. 1min candlestick will be output in log file
-
+3. KafkaProducerClient will publish the 1min tick message to kafka via topic "market"
+4. KafkaConsumerClient thread will consume the message from kafka via topic "market"
+5. 1min candlestick will be output in log file
+6. 1min candlestick will be published to kafka and consumed once available
 
 # Environment
 1. JDK22
@@ -24,9 +26,10 @@ The maven build will generate a fat jar with all dependence via shade plugin
 **NB**
 Sample log output pls refer to App.log
 
-# Outstanding Issue
-1. No clear logic to handle the case when the highest bid price bigger than lowest ask price
-2. currently only subscribe 10 best order books as default
+# Outstanding
+1. Need to handle the case perfectly when the highest bid price is bigger than lowest ask price
+2. currently subscribe 10 best order books as default but could be configured if required
+3. Coding style and formatting 
 
 
 
