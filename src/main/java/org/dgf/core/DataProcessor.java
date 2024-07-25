@@ -1,7 +1,7 @@
 package org.dgf.core;
 
 import com.google.common.base.Preconditions;
-import org.apache.logging.log4j.core.config.Order;
+
 import org.dgf.json.JsonUtility;
 import org.dgf.json.Quotation;
 import org.dgf.json.SnapshotOrderbook;
@@ -115,8 +115,9 @@ public class DataProcessor implements Runnable {
            return stick;
         }).toList();
         sticks.forEach(x -> {
-            logger.info(x.toString());
-            kafkaProducerClient.send(String.valueOf(UUID.randomUUID()), x.toString() );
+            var uuid = String.valueOf(UUID.randomUUID());
+            logger.info("{} - {}", uuid, x.toString());
+            kafkaProducerClient.send(uuid, x.toString() );
         });
     }
 
