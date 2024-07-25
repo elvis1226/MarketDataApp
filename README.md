@@ -21,7 +21,7 @@ The maven build will generate a fat jar with all dependence via shade plugin
 
 # Run
 1. Run as below command for multi instrument and one period only.
-> java -cp Application-1.0-SNAPSHOT-shaded.jar org.dgf.App "BTC/USD,XBT/USD" 30
+> java -cp Application-1.0-SNAPSHOT-shaded.jar org.dgf.App "BTC/USD,ETH/USD" 30
 
 **NB**
 Sample log output pls refer to App.log
