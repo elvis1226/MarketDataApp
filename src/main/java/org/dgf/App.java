@@ -3,7 +3,6 @@ package org.dgf;
 import com.google.common.collect.ImmutableList;
 import org.dgf.core.DataExtractor;
 import org.dgf.core.DataProcessor;
-import org.dgf.core.DataResult;
 import org.dgf.core.Message;
 import org.dgf.kafka.KafkaConsumerClient;
 import org.slf4j.Logger;
