@@ -1,0 +1,227 @@
+2024-07-25 11:11:03,911 INFO o.d.App [main] start ...
+2024-07-25 11:11:03,916 INFO o.d.App [main] execution duration 20 mins
+2024-07-25 11:11:03,918 INFO o.d.App [main] currency pairs : [BTC/USD, ETH/USD]
+2024-07-25 11:11:03,920 INFO o.d.n.DefaultWebSocketClient [Thread-0] Connecting...
+2024-07-25 11:11:04,019 INFO o.a.k.c.p.ProducerConfig [main] Idempotence will be disabled because retries is set to 0.
+2024-07-25 11:11:04,020 INFO o.a.k.c.p.ProducerConfig [main] ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-07-25 11:11:04,047 INFO o.a.k.c.t.i.KafkaMetricsCollector [main] initializing Kafka metrics collector
+2024-07-25 11:11:04,106 INFO o.a.k.c.u.AppInfoParser [main] Kafka version: 3.7.1
+2024-07-25 11:11:04,106 INFO o.a.k.c.u.AppInfoParser [main] Kafka commitId: e2494e6ffb89f828
+2024-07-25 11:11:04,107 INFO o.a.k.c.u.AppInfoParser [main] Kafka startTimeMs: 1721877064105
+2024-07-25 11:11:04,119 INFO o.a.k.c.c.ConsumerConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-07-25 11:11:04,132 INFO o.a.k.c.t.i.KafkaMetricsCollector [main] initializing Kafka metrics collector
+2024-07-25 11:11:04,183 INFO o.a.k.c.u.AppInfoParser [main] Kafka version: 3.7.1
+2024-07-25 11:11:04,183 INFO o.a.k.c.u.AppInfoParser [main] Kafka commitId: e2494e6ffb89f828
+2024-07-25 11:11:04,183 INFO o.a.k.c.u.AppInfoParser [main] Kafka startTimeMs: 1721877064183
+2024-07-25 11:11:04,186 INFO o.a.k.c.c.i.LegacyKafkaConsumer [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Subscribed to topic(s): market
+2024-07-25 11:11:04,412 INFO o.a.k.c.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Cluster ID: 9y5fpnhCTsqD1QMPs1DHdw
+2024-07-25 11:11:04,413 INFO o.a.k.c.Metadata [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Cluster ID: 9y5fpnhCTsqD1QMPs1DHdw
+2024-07-25 11:11:04,414 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Discovered group coordinator DUDUWEIWEI:9092 (id: 2147483647 rack: null)
+2024-07-25 11:11:04,423 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2024-07-25 11:11:04,434 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Request joining group due to: need to re-join with the given member-id: consumer-test-1-313cba2a-3bd6-4154-8b0a-2a1c8cd34622
+2024-07-25 11:11:04,434 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2024-07-25 11:11:04,437 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Successfully joined group with generation Generation{generationId=7, memberId='consumer-test-1-313cba2a-3bd6-4154-8b0a-2a1c8cd34622', protocol='range'}
+2024-07-25 11:11:04,445 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Finished assignment for group at generation 7: {consumer-test-1-313cba2a-3bd6-4154-8b0a-2a1c8cd34622=Assignment(partitions=[market-0])}
+2024-07-25 11:11:04,450 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Successfully synced group in generation Generation{generationId=7, memberId='consumer-test-1-313cba2a-3bd6-4154-8b0a-2a1c8cd34622', protocol='range'}
+2024-07-25 11:11:04,450 INFO o.a.k.c.c.i.ConsumerCoordinator [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Notifying assignor about the new Assignment(partitions=[market-0])
+2024-07-25 11:11:04,452 INFO o.a.k.c.c.i.ConsumerRebalanceListenerInvoker [Thread-11] [Consumer clientId=consumer-test-1, groupId=test] Adding newly assigned partitions: market-0
+2024-07-25 11:11:04,463 INFO o.a.k.c.c.i.ConsumerUtils [Thread-11] Setting offset for partition market-0 to the committed offset FetchPosition{offset=61, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[DUDUWEIWEI:9092 (id: 0 rack: null)], epoch=0}}
+2024-07-25 11:11:05,178 INFO o.d.n.ClientEndPoint [WebSocket@830822003-46] Connected with server
+2024-07-25 11:11:05,181 INFO o.d.n.ClientEndPoint [WebSocket@830822003-46] {   "method": "subscribe","params": {"channel": "book","snapshot": true,"symbol": [ "BTC/USD","ETH/USD" ]},"req_id": 1234567890 }
+2024-07-25 11:11:05,184 INFO o.d.n.DefaultWebSocketClient [Thread-0] Connected...
+2024-07-25 11:12:05,644 INFO o.d.c.DataProcessor [Thread-9] e2b6f527-c1be-49bd-a9a8-aecff9bd8d54 - 1M CandleStick{symbol=BTC/USD, open=64105.45, high=64137.65, low=64092.55, close=64108.350000000006, start=2024-07-25T03:11:03.950229, tickCount=7399}
+2024-07-25 11:12:05,658 INFO o.d.c.DataProcessor [Thread-9] c1080190-7ce6-4b58-98d4-554c5303348b - 1M CandleStick{symbol=ETH/USD, open=3169.2, high=3170.625, low=3169.2, close=3169.56, start=2024-07-25T03:11:03.900284, tickCount=7399}
+2024-07-25 11:12:05,667 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 61, key = e2b6f527-c1be-49bd-a9a8-aecff9bd8d54, value = 1M CandleStick{symbol=BTC/USD, open=64105.45, high=64137.65, low=64092.55, close=64108.350000000006, start=2024-07-25T03:11:03.950229, tickCount=7399}
+2024-07-25 11:12:05,778 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 62, key = c1080190-7ce6-4b58-98d4-554c5303348b, value = 1M CandleStick{symbol=ETH/USD, open=3169.2, high=3170.625, low=3169.2, close=3169.56, start=2024-07-25T03:11:03.900284, tickCount=7399}
+2024-07-25 11:13:05,651 INFO o.d.c.DataProcessor [Thread-9] daee9b6d-33df-4f51-a7d0-e9a3e504a37a - 1M CandleStick{symbol=BTC/USD, open=64120.75, high=64124.2, low=64100.95, close=64117.0, start=2024-07-25T03:12:03.979593, tickCount=4544}
+2024-07-25 11:13:05,651 INFO o.d.c.DataProcessor [Thread-9] 338f2f51-e9cd-4f02-b704-cebc21ae09e2 - 1M CandleStick{symbol=ETH/USD, open=3169.56, high=3170.3450000000003, low=3169.33, close=3170.0299999999997, start=2024-07-25T03:12:03.738623, tickCount=4544}
+2024-07-25 11:13:05,669 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 63, key = daee9b6d-33df-4f51-a7d0-e9a3e504a37a, value = 1M CandleStick{symbol=BTC/USD, open=64120.75, high=64124.2, low=64100.95, close=64117.0, start=2024-07-25T03:12:03.979593, tickCount=4544}
+2024-07-25 11:13:05,669 INFO o.d.k.KafkaConsumerClient [Thread-11] Kafka message offset = 64, key = 338f2f51-e9cd-4f02-b704-cebc21ae09e2, value = 1M CandleStick{symbol=ETH/USD, open=3169.56, high=3170.3450000000003, low=3169.33, close=3170.0299999999997, start=2024-07-25T03:12:03.738623, tickCount=4544}
