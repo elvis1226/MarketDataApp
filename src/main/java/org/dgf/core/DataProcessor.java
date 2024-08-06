@@ -54,7 +54,7 @@ public class DataProcessor implements Runnable {
 
                 Message message = this.queue.poll(100, TimeUnit.MILLISECONDS);
                 if (!message.isEmpty()) {
-                    logger.debug(message.getValue());
+                    logger.debug(message.value());
                     List<OrderBook> orderBook = parseMessage(message);
                     if (!orderBook.isEmpty()) {
                         if (this.isSnapshotMessage) {
@@ -258,13 +258,13 @@ public class DataProcessor implements Runnable {
         Optional<Snapshot> snapshot = Optional.empty();
         Optional<TickUpdate> tickUpdate = Optional.empty();
 
-        if (message.getType().equals("snapshot")) {
-            snapshot = this.jsonParser.parseSnapshot(message.getValue());
+        if (message.type().equals("snapshot")) {
+            snapshot = this.jsonParser.parseSnapshot(message.value());
             this.isSnapshotMessage = true;
             return snapshot.map(x-> buildOrderBookFromSnapshot(x)).orElse(List.of());
         }
-        else if (message.getType().equals("update")) {
-            tickUpdate = this.jsonParser.parseTickUpdate(message.getValue());
+        else if (message.type().equals("update")) {
+            tickUpdate = this.jsonParser.parseTickUpdate(message.value());
             this.isSnapshotMessage = false;
             return tickUpdate.map(x -> buildOrderBookFromUpdate(x)).orElse(List.of());
         }
